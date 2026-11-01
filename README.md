@@ -1,4 +1,4 @@
-# 📄 Curriculum Vitae — Ángel Gabriel Munguía Velázquez
+# Curriculum Vitae — Ángel Gabriel Munguía Velázquez
 
 [![XeLaTeX](https://img.shields.io/badge/Compiled%20with-XeLaTeX-005fa9.svg?style=flat-square&logo=latex)](https://www.tug.org/xetex/)
 [![Overleaf](https://img.shields.io/badge/Overleaf-Compatible-47A141.svg?style=flat-square&logo=overleaf)](https://www.overleaf.com/)
@@ -14,7 +14,7 @@ El diseño sigue una estética minimalista, elegante y de escala de grises inspi
 
 ---
 
-## 👁️ Vista Previa del Documento
+## Vista Previa del Documento
 
 <div align="center">
   <table style="border: none; border-collapse: collapse;">
@@ -36,7 +36,7 @@ El diseño sigue una estética minimalista, elegante y de escala de grises inspi
 
 ---
 
-## ✨ Características de Diseño y Maquetación
+## Características de Diseño y Maquetación
 
 - **Motor de compilación XeLaTeX**: Emplea el paquete `fontspec` para cargar tipografías modernas OpenType/TrueType directamente desde la carpeta local `fonts/`.
 - **Tipografía Sans-Serif**: Familia tipográfica completa de **Roboto** (Google Fonts) en variantes *Light*, *Regular*, *Medium*, *Bold* e *Italic*.
@@ -50,7 +50,7 @@ El diseño sigue una estética minimalista, elegante y de escala de grises inspi
 
 ---
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 CV_code/
@@ -74,12 +74,15 @@ CV_code/
 ├── CV_Gabriel_Velazquez.tex          # Código fuente principal de LaTeX
 ├── CV_Gabriel_Velazquez.pdf          # Documento final compilado
 ├── CV_Gabriel_Velazquez_LaTeX.zip    # Archivo comprimido listo para subir a Overleaf
-└── README.md                         # Documentación del proyecto
+├── LICENSE                           # Licencia MIT
+├── Makefile                          # Script de automatización de compilación local
+├── README.md                         # Documentación en español
+└── README_EN.md                      # Documentación en inglés
 ```
 
 ---
 
-## 🚀 Guía de Compilación
+## Guía de Compilación
 
 ### Opción 1: Overleaf (Recomendado — En la nube, sin instalación)
 
@@ -130,7 +133,7 @@ Cada vez que realizas un `git push` a la rama `main` con cambios en el archivo `
 
 ---
 
-## 🛠️ Guía de Personalización y Comandos
+## Guía de Personalización y Comandos
 
 El archivo `CV_Gabriel_Velazquez.tex` incluye un conjunto de macros modulares diseñadas para mantener la consistencia del espaciado y facilitar la adición de nuevos elementos:
 
@@ -174,7 +177,7 @@ Al principio de `CV_Gabriel_Velazquez.tex` puedes personalizar la configuración
 
 ---
 
-## 📦 Paquetes de LaTeX Utilizados
+## Paquetes de LaTeX Utilizados
 
 | Paquete | Propósito |
 | :--- | :--- |
@@ -191,16 +194,16 @@ Al principio de `CV_Gabriel_Velazquez.tex` puedes personalizar la configuración
 
 ---
 
-## 👤 Autor y Contacto
+## Autor y Contacto
 
 **Ángel Gabriel Munguía Velázquez**
-- 🎓 *Physics Undergraduate — Computational Physics & AI* en UDLAP (Puebla, México)
-- 💼 **LinkedIn**: [Ángel Gabriel Munguía Velázquez](https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a)
-- 🐙 **GitHub**: [@AngelGab3](https://github.com/AngelGab3)
-- ✉️ **Email institucional**: [angel.munguiavz@udlap.mx](mailto:angel.munguiavz@udlap.mx)
+- *Physics Undergraduate — Computational Physics & AI* en UDLAP (Puebla, México)
+- **LinkedIn**: [Ángel Gabriel Munguía Velázquez](https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a)
+- **GitHub**: [@AngelGab3](https://github.com/AngelGab3)
+- **Email institucional**: [angel.munguiavz@udlap.mx](mailto:angel.munguiavz@udlap.mx)
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este repositorio se distribuye bajo la licencia **MIT**. Eres libre de tomar esta plantilla y adaptarla para tu propio Curriculum Vitae. Las fuentes tipográficas Roboto pertenecen a [Google Fonts](https://fonts.google.com/specimen/Roboto) bajo la Licencia Apache 2.0.

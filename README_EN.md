@@ -1,4 +1,4 @@
-# 📄 Curriculum Vitae — Ángel Gabriel Munguía Velázquez
+# Curriculum Vitae — Ángel Gabriel Munguía Velázquez
 
 [![XeLaTeX](https://img.shields.io/badge/Compiled%20with-XeLaTeX-005fa9.svg?style=flat-square&logo=latex)](https://www.tug.org/xetex/)
 [![Overleaf](https://img.shields.io/badge/Overleaf-Compatible-47A141.svg?style=flat-square&logo=overleaf)](https://www.overleaf.com/)
@@ -14,7 +14,7 @@ The design follows a minimalist, elegant grayscale aesthetic inspired by the *Ni
 
 ---
 
-## 👁️ Document Preview
+## Document Preview
 
 <div align="center">
   <table style="border: none; border-collapse: collapse;">
@@ -36,7 +36,7 @@ The design follows a minimalist, elegant grayscale aesthetic inspired by the *Ni
 
 ---
 
-## ✨ Features and Layout
+## Features and Layout
 
 - **XeLaTeX compilation engine**: Uses `fontspec` to load modern TrueType/OpenType fonts directly from the local `fonts/` folder.
 - **Sans-Serif typography**: Full **Roboto** family (Google Fonts) in *Light*, *Regular*, *Medium*, *Bold*, and *Italic* weights.
@@ -50,7 +50,7 @@ The design follows a minimalist, elegant grayscale aesthetic inspired by the *Ni
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 CV_code/
@@ -74,13 +74,15 @@ CV_code/
 ├── CV_Gabriel_Velazquez.tex          # Main LaTeX source document
 ├── CV_Gabriel_Velazquez.pdf          # Compiled output document
 ├── CV_Gabriel_Velazquez_LaTeX.zip    # Standalone archive ready for 1-click Overleaf upload
+├── LICENSE                           # MIT License
+├── Makefile                          # Local compilation automation script
 ├── README.md                         # Documentation in Spanish
 └── README_EN.md                      # Documentation in English
 ```
 
 ---
 
-## 🚀 How to Compile
+## How to Compile
 
 ### Option 1: Overleaf (Recommended — Zero-install Cloud Setup)
 
@@ -130,7 +132,7 @@ Whenever you push commits to `main` modifying the `.tex` file or the `fonts/` di
 
 ---
 
-## 🛠️ Customization Guide
+## Customization Guide
 
 The file `CV_Gabriel_Velazquez.tex` provides clean, reusable macros:
 
@@ -160,7 +162,7 @@ The file `CV_Gabriel_Velazquez.tex` provides clean, reusable macros:
 
 ---
 
-## 📦 LaTeX Package Dependencies
+## LaTeX Package Dependencies
 
 | Package | Purpose |
 | :--- | :--- |
@@ -177,16 +179,16 @@ The file `CV_Gabriel_Velazquez.tex` provides clean, reusable macros:
 
 ---
 
-## 👤 Author & Contact
+## Author & Contact
 
 **Ángel Gabriel Munguía Velázquez**
-- 🎓 *Physics Undergraduate — Computational Physics & AI* at UDLAP (Puebla, Mexico)
-- 💼 **LinkedIn**: [Ángel Gabriel Munguía Velázquez](https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a)
-- 🐙 **GitHub**: [@AngelGab3](https://github.com/AngelGab3)
-- ✉️ **Institutional Email**: [angel.munguiavz@udlap.mx](mailto:angel.munguiavz@udlap.mx)
+- *Physics Undergraduate — Computational Physics & AI* at UDLAP (Puebla, Mexico)
+- **LinkedIn**: [Ángel Gabriel Munguía Velázquez](https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a)
+- **GitHub**: [@AngelGab3](https://github.com/AngelGab3)
+- **Institutional Email**: [angel.munguiavz@udlap.mx](mailto:angel.munguiavz@udlap.mx)
 
 ---
 
-## 📄 License
+## License
 
 This repository is distributed under the **MIT** License. You are free to fork, adapt, and use this template for your own CV/resume. Roboto fonts are by [Google Fonts](https://fonts.google.com/specimen/Roboto) under the Apache 2.0 License.
