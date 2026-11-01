@@ -1,0 +1,32 @@
+name: Compilar CV con XeLaTeX
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.tex'
+      - 'fonts/**'
+      - '.github/workflows/**'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compilar PDF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Compilar LaTeX con XeLaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV_Gabriel_Velazquez.tex
+          latexmk_engine: xelatex
+
+      - name: Subir artefacto PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV_Gabriel_Velazquez
+          path: CV_Gabriel_Velazquez.pdf

@@ -1,0 +1,212 @@
+% !TEX program = xelatex
+% Compile with XeLaTeX. All fonts are included in fonts/.
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1.4cm,top=1cm,bottom=1.4cm,footskip=.65cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Roboto}[Path=fonts/,Extension=.ttf,UprightFont=*-Light,BoldFont=*-Bold,ItalicFont=*-LightItalic,BoldItalicFont=*-BoldItalic]
+\newfontfamily\headerfont{Roboto}[Path=fonts/,Extension=.ttf,UprightFont=*-Regular]
+\usepackage{xcolor,tabularx,enumitem,titlesec,fancyhdr,needspace}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{graytext}{HTML}{5D5D5D}
+\color{darktext}
+\hypersetup{pdftitle={Angel Gabriel Munguia Velazquez - CV},pdfauthor={Angel Gabriel Munguia Velazquez}}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\fontsize{8}{9}\selectfont\color{graytext}\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\titleformat{\section}{\fontsize{14}{16}\selectfont\bfseries\color{black}}{}{0pt}{}[\vspace{-8pt}\hspace*{0pt}]
+\newcommand{\cvsection}[1]{\par\Needspace{5\baselineskip}\vspace{9pt}{\fontsize{14}{16}\selectfont\bfseries\color{black}#1\enspace\leaders\hrule height .6pt\hfill\kern0pt}\par\vspace{5pt}}
+\renewcommand{\section}[1]{\cvsection{#1}}
+\renewcommand{\small}{\fontsize{9}{11}\selectfont}
+\newcommand{\resumeSubHeadingListStart}{}
+\newcommand{\resumeSubHeadingListEnd}{}
+\newcommand{\resumeSubheading}[4]{\par\Needspace{5\baselineskip}\vspace{4pt}\begin{tabularx}{\textwidth}{@{}X r@{}}{\fontsize{10}{12}\selectfont\bfseries #1}&{\fontsize{9}{11}\selectfont\itshape #2}\\{\fontsize{9}{11}\selectfont #3}&{\fontsize{8}{10}\selectfont\itshape #4}\end{tabularx}\par}
+\newcommand{\resumeProjectHeading}[2]{\par\Needspace{3\baselineskip}\vspace{5pt}\begin{tabularx}{\textwidth}{@{}X r@{}}{\small #1}&{\fontsize{8}{10}\selectfont\itshape #2}\end{tabularx}\par}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=11pt,label=\textbullet,itemsep=1pt,topsep=3pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeItem}[1]{\item #1}
+\begin{document}
+\fontsize{9}{11}\selectfont
+\begin{center}
+{\headerfont\fontsize{20}{24}\selectfont Angel Gabriel Munguia Velazquez}\\[4pt]
+{\fontsize{8}{10}\selectfont PHYSICS UNDERGRADUATE · COMPUTATIONAL PHYSICS \& ARTIFICIAL INTELLIGENCE}\\[4pt]
+{\fontsize{8}{10}\selectfont\itshape\color{graytext}Puebla, Mexico}\\[5pt]
+{\fontsize{7.5}{10}\selectfont \faPhone\enspace (+52) 222 712 1666\quad|\quad\href{mailto:angel.munguiavz@udlap.mx}{\faEnvelope\enspace angel.munguiavz@udlap.mx}\quad|\quad\href{https://www.linkedin.com/in/ángel-gabriel-munguía-velázquez-53806930a}{\faLinkedin\enspace Gabriel Velazquez}\quad|\quad\href{https://github.com/AngelGab3}{\faGithub\enspace AngelGab3}}
+\end{center}
+%-----------PROFILE-----------
+\section{Profile}
+\small{Physics undergraduate at Universidad de las Américas Puebla (UDLAP), driven by curiosity about how computation can help us understand the natural world. Interested in computational physics, machine learning, and quantum computing, with hands-on experience implementing deep learning models, designing experimental setups, and coordinating hardware–software integration. Seeking research opportunities to develop computational methods and models that help explain complex systems, interpret scientific data, and deepen our understanding of the underlying physical processes.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de las Américas Puebla (UDLAP)}{Puebla, Mexico}
+      {B.S. in Physics, Honors Program (GPA: 9.5/10)}{Expected May 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors Program:} Selective academic track comprising the top 15\% of undergraduate students per cohort; culminates in an original research project under faculty supervision.}
+        \resumeItem{\textbf{Relevant Coursework:} Ordinary \& Partial Differential Equations, Mathematical Analysis I \& II, Numerical Analysis, Modern Physics, Classical Mechanics, Optics, Mathematical Methods for Physics I, Matrix Theory.}
+      \resumeItemListEnd
+    \resumeSubheading
+  {Bachillerato 5 de Mayo - BUAP}{Puebla, Mexico}
+  {International Baccalaureate (IB) Diploma Programme -- High School (GPA: 9.5/10)}{May 2024}
+  \resumeItemListStart
+    \resumeItem{Graduated with 34 IB points.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH & TECHNICAL EXPERIENCE-----------
+\section{Research \& Technical Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+  {Universidad de las Américas Puebla (UDLAP)}{Puebla, Mexico}
+  {Undergraduate Researcher -- Honors Program}{Aug 2025 -- Present}
+  {\small\textit{Research supervisor: Dr. Milagros Zeballos Rebaza}\par}
+  \resumeItemListStart
+    \resumeItem{Developing a mentored research project in computational astrophysics: applying deep learning models for redshift estimation in submillimeter galaxies (SMGs).}
+    \resumeItem{Processing and analyzing multi-wavelength astronomical datasets using Python and TensorFlow for redshift estimation.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.youtube.com/watch?v=VdZCxBv-NX8}{Mexican Robotics Tournament (TMR)}}{Mexico}
+      {Electronics and Control Systems Lead}{Jan 2025 -- May 2026}
+      {\small\textit{Faculty advisor: Dr. Alejandra Hernández Sánchez}\par}
+      \resumeItemListStart
+        \resumeItem{Engineered hardware and control systems for autonomous robots, spanning from Arduino-based logic to custom PCBs with ESP32 microcontrollers.}
+        \resumeItem{Integrated sensor arrays and optimized power distribution for autonomous robots.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://blog.udlap.mx/blog/2026/06/30/oro-para-estudiantes-de-la-udlap-en-certamen-iberoamericano-de-ciencia-y-tecnologia/}{Ibero-American Infomatrix Final}}{San Luis Potosi, Mexico}
+      {AI Developer -- Visual Assistant for the Visually Impaired}{Mar 2026}
+      \resumeItemListStart
+        \resumeItem{Developed an AI visual assistant integrating multimodal LLMs with YOLO object detection to provide real-time environmental audio feedback.}
+        \resumeItem{Engineered a low-latency video streaming pipeline over Wi-Fi utilizing an Arduino UNO Q to transmit real-time webcam feeds.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NASA Space Apps Challenge}{Puebla, Mexico}
+      {AI \& iOS Developer}{Oct 2024, 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{2025 (Air Quality):} Engineered the predictive core using deep learning (LSTM) and XGBoost for forecasting, and integrated LLMs for a health-focused platform.}
+        \resumeItem{\textbf{2024 (Exoplanet Mapping):} Built a Swift iOS interface for real-time star mapping utilizing open-source NASA datasets, rendering celestial bodies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Apple Swift Challenge \& iOS Development Lab}{Puebla, Mexico}
+      {Native iOS App Developer}{May 2025}
+      \resumeItemListStart
+        \resumeItem{Built native iOS applications in Swift, applying UI/UX principles for end-to-end deployment in a competitive hackathon environment.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS & PRESENTATIONS-----------
+\section{Conference Presentations}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {67th National Physics Congress (SMF)}{Chihuahua, Mexico}
+      {Poster Presenter -- Experimental Physics}{Oct 2024}
+      {\small\textit{Research supervisor: Dr. Carlos Martínez Hipatl}\par}
+      \resumeItemListStart
+        \resumeItem{\textbf{Presented Research:} \textit{Experimental Characterization of Magneto-Optical Properties in Corn Syrup via the Faraday Effect.}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SCHOLARSHIPS & AWARDS-----------
+\section{Scholarships \& Awards}
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash\color{graytext}}p{2.5cm}@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{\hspace{12pt}}>{\raggedleft\arraybackslash\itshape}p{2.7cm}@{}}
+  \raisebox{9pt}[\height][\depth]{2024 -- 2028} & \textbf{\href{https://oem.com.mx/elsoldepuebla/local/udlap-lanza-convocatoria-para-primera-generacion-del-equipo-representativo-stem-13516576}{Full Academic Excellence STEM Scholarship (100\% Tuition)}}, UDLAP.\newline Highly competitive merit-based scholarship awarded to top-tier STEM talent, covering full tuition. & Puebla, Mexico \\[3pt]
+  \raisebox{9pt}[\height][\depth]{2026} & \textbf{International Gold Medalist \& Argentina 2026 Qualifier}, \href{https://blog.udlap.mx/blog/2026/06/30/oro-para-estudiantes-de-la-udlap-en-certamen-iberoamericano-de-ciencia-y-tecnologia/}{Ibero-American Infomatrix Final} & San Luis Potosi, Mexico \\[3pt]
+  \raisebox{9pt}[\height][\depth]{2025} & \textbf{National Finalist (5th Place Regional)}, iOS Development Lab Hackathon & Puebla, Mexico \\[3pt]
+  \raisebox{9pt}[\height][\depth]{2024} & \textbf{National Competitor}, Mexican National Physics Olympiad & Online\\[3pt]
+  \raisebox{9pt}[\height][\depth]{2023} & \textbf{4th Place (State Level)}, Mexican Physics Olympiad & Puebla, Mexico \\
+\end{tabularx}
+\par
+\endgroup
+
+%-----------VOLUNTEERING & SCIENCE OUTREACH-----------
+\section{Teaching \& Science Outreach}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Deep Learning: A Mathematical and Physical Approach}{}
+      {Independent Project -- Course Designer \& Instructor}{Summer 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developing and delivering a lecture series connecting numerical analysis with the mathematical foundations of deep learning.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UDLAP Official STEM Representative Team}{Puebla, Mexico}
+      {Inaugural STEM Scholar \& Lead Instructor}{May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Summer 2026:} Designed and taught ``A Very Brief Introduction to Quantum Computing'', covering the mathematical and physical foundations for 80 high school students.}
+        \resumeItem{\textbf{Summer 2025:} Taught ``Entre historias y juegos STEM'', a science communication workshop.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Puebla Planetarium Dome / Puebla Fair}{Puebla, Mexico}
+      {Guest Speaker -- ``Cosmic Shortcuts''}{May 2026}
+      \resumeItemListStart
+        \resumeItem{Delivered an immersive physics lecture for public audiences inside the main dome.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {``Night of the Stars'' Outreach Program}{Puebla, Mexico}
+      {Workshop Designer \& Presenter}{Nov 2023, 2024, 2025}
+      \resumeItemListStart
+        \resumeItem{Facilitated annual public science workshops for audiences of all ages, covering topics ranging from electromagnetism (2023) to machine learning in astrophysics (2025).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXTENDED EDUCATION \& CERTIFICATIONS-----------
+\section{Extended Education \& Certifications}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fifth School of Quantum Computing}{Mexico City, Mexico}
+      {Universidad Nacional Autónoma de México}{2026}
+
+    \resumeSubheading
+      {Introduction to Deep Learning}{Online}
+      {University of Colorado Boulder}{Expected Dec 2026}
+
+    \resumeSubheading
+      {Python Programming for Quantum Computing}{Online}
+      {Packt}{July 2026}
+
+    \resumeSubheading
+      {Math Foundations and Quantum Mechanics Essentials}{Online}
+      {Packt}{July 2025}
+
+    \resumeSubheading
+      {Numerical Methods}{Online}
+      {The Hong Kong University of Science and Technology}{Expected Dec 2026}
+
+    \resumeSubheading
+      {Python Essentials 1}{Online}
+      {Cisco Networking Academy}{Dec 2025}
+      
+  \resumeSubHeadingListEnd
+  
+%-----------TECHNICAL SKILLS & LANGUAGES-----------
+\section{Technical Skills \& Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Quantum \& Computational Physics}{: Qiskit, Numerical Methods, C, MATLAB} \\
+     \textbf{Deep Learning \& AI}{: Python, PyTorch, TensorFlow, scikit-learn, LLM Integration, Computer Vision (YOLO)} \\
+     \textbf{Hardware \& Control}{: Custom PCB Design, Microcontrollers (ESP32, Arduino), Raspberry Pi} \\
+     \textbf{Tools}{: Visual Studio, PyCharm, Jupyter Notebooks, Google Colab, \LaTeX, Git/GitHub} \\
+     \textbf{Languages}{: Spanish (Native), English (Fluent -- TOEFL ITP: 587)}
+    }}
+ \end{itemize}
+
+\end{document}
